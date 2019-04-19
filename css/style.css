@@ -1,0 +1,746 @@
+/************ Google Fonts *****************/
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+/************* Cudstom Fonts *****************/
+@font-face{
+  font-family: 'DroidSerif', sans-serif;
+  font-weight: bold;
+  src: url('fonts/DroidSerif-Bold.ttf') format('ttf'),
+}
+@font-face{
+  font-family: 'DroidSerif', sans-serif;
+  font-weight: normal;
+  src: url('fonts/DroidSerif-Regular.ttf') format('ttf'),
+}
+@font-face{
+  font-family: 'ProximaNova' sans-serif;
+  font-weight: 900;
+  src: url('fonts/proximanova-black.otf') format('otf'),
+}
+/************* Globale Css *****************/
+.border-line{
+    border: 1.2px solid #ed145b;
+    width: 200px;
+    display: block;
+    margin: 30px 0px;
+}
+h2{
+    font-family: lato;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #5a5a5a;
+    margin: 0px;
+}
+p{
+    font-family: lato;
+    font-size: 15px;
+    font-weight: 300;
+    color: #2e2d2d;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+.btn-custom{
+	font-size: 15px;
+    font-family: lato;
+    font-weight: 700;
+    color: #ffffff;
+    background: #ed145b;
+    border: 2px solid #ed145b;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.btn-custom:hover{
+	background-color: transparent;
+	color: #ffffff;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+/***********************************************************************
+////////////////////////Header Start here///////////////////////////////
+************************************************************************/
+header{
+	background: url("../images/banner-bg.png") no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 700px;
+	position: relative;
+    z-index: 99; 
+}
+header .navbar{
+	padding: 20px 0px;
+	background-color: black;
+}
+header .nav-link{
+  padding: 0px;
+  margin-right: 5px;
+  color: white;
+  font-family: lato;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .navbar-nav .nav-item.active .nav-link{
+  color: #cc1010;
+}
+header .navbar-nav .nav-link:hover{
+  color: #cc1010 ;
+}
+header .heading{
+	padding-top: 150px;
+}
+header .heading h1{
+	font-size: 46px;
+    font-family: lato;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+header .heading h1 span{
+	font-weight: 900;
+}
+header .heading .border-line{
+    border: 1.2px solid #ed145b;
+    width: 200px;
+    display: block;
+    margin: 30px auto;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+header .heading .border-line:hover{
+	width: 500px;
+}
+header .heading p{
+    line-height: 1.9;
+    margin: 0px 0px 60px 0px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: lato;
+}
+
+/***********************************************************************
+////////////////////////Header End here/////////////////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+///////////////////////About Us Start here//////////////////////////////
+************************************************************************/
+.about-us-section{
+	background-color: #f4f4f4;
+	padding: 100px 0px;
+	position: relative;
+}
+.about-us-section .bottom-border{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: -27px;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    border: 20px solid #ed145b;
+    z-index: 9;
+}
+.about-us-section .left-content{
+	position: relative;
+	top: 30px;
+}
+.about-us-section .left-content h2{
+    font-family: lato;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #5a5a5a;
+}
+.about-us-section .left-content p{
+    font-family: lato;
+    font-size: 15px;
+    font-weight: 300;
+    color: #2e2d2d;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+.about-us-section .left-content a{
+	color: #ed145b;
+    font-family: lato;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.about-us-section .left-content a i{
+    margin-left: 10px;
+    font-size: 20px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.about-us-section .left-content a:hover i{
+	-webkit-transform: rotate(480deg);
+    -moz-transform: rotate(480deg);
+    -o-transform: rotate(480deg);
+	transform: rotate(480deg);
+	margin-left: 30px;
+	color: black;
+}
+.about-us-section .right-content{
+	position: absolute;
+    top: -365px;
+}
+.about-us-section .right-content .macbook-pro-img{
+	position: relative;
+}
+.about-us-section .right-content .browser-screen{
+    max-width: 76%;
+    position: absolute;
+    top: 35px;
+    left: 105px;
+    z-index: 11;
+}
+/***********************************************************************
+////////////////////////About Us End here///////////////////////////////
+***********************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Our Services Start here/////////////////////////
+************************************************************************/
+.our-services-section{
+	background-color: #ffffff;
+	padding: 100px 0px;
+}
+.our-services-section .heading{
+	margin: 30px 0px 80px 0px;
+}
+.our-services-section .heading .border-line{
+	display: block;
+	margin: 30px auto;
+}
+.our-services-section .item .circle{
+	border: 1px solid gray;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px
+}
+.our-services-section .item h6{
+	text-align: center;
+    font-size: 15px;
+    font-family: lato;
+    font-weight: 400;
+    color: #ed145b;	
+}
+/***********************************************************************
+////////////////////////Our Services End here///////////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Testimonial Start here//////////////////////////
+************************************************************************/
+.testimonial-section{
+	padding: 100px 0px;
+	background: url("../images/testimonial-bg.png") no-repeat;
+	background-size: cover;
+}
+.testimonial-section .slick-item img{
+	display: block;
+	margin: 0 auto;
+}
+.testimonial-section .slick-item p{
+	font-family: lato;
+    font-size: 25px;
+    font-style: italic;
+    color: #ffffff;
+    margin: 30px 0px;
+    text-align: center;
+}
+.fa-chevron-right{
+    color: white;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    right: -55px;
+    padding: 10px 10px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.fa-chevron-right:hover{
+	color: black;
+	background-color: white;
+}
+.fa-chevron-left{
+	color: white;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: -25px;
+    padding: 10px 10px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.fa-chevron-left:hover{
+	color: black;
+	background-color: white;
+
+}
+/***********************************************************************
+////////////////////////Testimonial End here////////////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Prices Start here///////////////////////////////
+************************************************************************/
+.prices-section{
+	padding: 100px 0px;
+	background-color: #f4f4f4;
+}
+.prices-section .heading{
+	margin-bottom: 100px;
+}
+.prices-section .border-line{
+	display: block;
+	margin: 30px auto;
+}
+.prices-section .card{
+	border: 0px;
+    border-radius: 0px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.prices-section .card:hover{
+    -webkit-box-shadow: 5px 5px 5px #5a5a5a;
+    -moz-box-shadow: 5px 5px 5px #5a5a5a;
+    -o-box-shadow: 5px 5px 5px #5a5a5a;
+	box-shadow: 5px 5px 5px #5a5a5a;
+}
+.prices-section .card:hover .card-header{
+	background-color: #ed145b;
+}
+.prices-section .card .card-header{
+    border-radius: 0px;
+    background-color: #5a5a5a;
+    padding-bottom: 50px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.prices-section .card .card-header p{
+    color: #f4f4f4;
+    font-family: lato;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.prices-section .card .card-header p i{
+	font-size: 20px;
+}
+.fa-dollar-sign::before{
+	position: relative;
+    top: -2px;
+    left: -4px;
+}
+.prices-section .card .card-header span{
+	display: block;
+    color: #f4f4f4;
+    font-size: 15px;
+    font-family: lato;
+    font-weight: 700;
+    margin-top: -22px
+}
+.prices-section .card .card-header .btn-card{
+	position: absolute;
+	top: 132px;
+    left: 20px;
+	font-size: 15px;
+    font-family: lato;
+    font-weight: 700;
+    color: black;
+    background: #f4f4f4;
+    border-radius: 50px;
+    text-align: center;
+    padding: 12px 65px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.prices-section .card .card-body .all-para{
+	margin: 30px 0px;
+}
+.prices-section .card .card-body p{
+	margin-bottom: 10px;
+}
+.prices-section .card .card-body .btn-custom{
+    padding: 10px 60px;
+    margin-bottom: 15px;
+}
+.prices-section .card .card-body .btn-custom:hover{
+	background-color: transparent;
+	color: black;
+}
+/***********************************************************************
+////////////////////////Prices End here///////////////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Additional Info Start here//////////////////////
+************************************************************************/
+.additional-info{
+	padding: 100px 0px;
+}
+.additional-info .left-img{
+	margin-top: 5px;
+}
+.additional-info .left-img img{
+	max-width: 55%;
+}
+.additional-info .resolution,
+.additional-info .photography,
+.additional-info .customize{
+	margin-bottom: 70px;
+}
+.additional-info .right-content{
+	margin-left: -15px;
+}
+.additional-info .right-content h6{
+	font-family: lato;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ed145b;
+    margin-bottom: 10px;
+}
+.additional-info .right-content p{
+	margin-bottom: 0px;
+}
+/***********************************************************************
+////////////////////////Additional Info End here////////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Join Us Start here//////////////////////////////
+************************************************************************/
+.join-us-section{
+	padding: 50px 0px;
+	background-color: #ed145b;
+}
+.join-us-section h2{
+    font-family: lato;
+    font-style: normal;
+    font-size: 38px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.join-us-section h2 span{
+	font-weight: 700;
+}
+.join-us-section .btn-custom{
+	color: #ed145b;
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	padding: 10px 55px;
+	margin-left: 5px;
+}
+.join-us-section .btn-custom:hover{
+	background-color: transparent;
+	color: white;
+}
+/***********************************************************************
+////////////////////////Join Us End here////////////////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Our Updates start here//////////////////////////
+************************************************************************/
+.our-updates-section{
+	padding: 100px 0px;
+}
+.our-updates-section .heading{
+	margin-bottom: 100px;
+}
+.our-updates-section .heading .border-line{
+	display: block;
+	margin: 30px auto;
+}
+.our-updates-section .card{
+	border: 0px;
+    border-radius: 0px;
+}
+.our-updates-section .card .card-header{
+    border-radius: 0px;
+    padding: 0px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+.our-updates-section .card .card-header::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background-color: #ed145bd6;
+	opacity: 0;
+	-webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.our-updates-section .card:hover .card-header::after{
+	opacity: 1;
+}
+.our-updates-section .card:hover span{
+	opacity: 0;
+}
+.our-updates-section .card .card-header span{
+	display: block;
+    position: absolute;
+    width: 99.9%;
+    top: 207px;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    border: 20px solid #ed145b;
+    z-index: -1;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.our-updates-section .card .card-header i{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: white;
+    opacity: 0;
+}
+.our-updates-section .card:hover i{
+	opacity: 1;
+	-webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    z-index: 111;
+}
+.our-updates-section .card .card-body{
+	background-color: #f4f4f4;
+}
+.our-updates-section .card .card-body h6{
+	font-size: 15px;
+    font-family: lato;
+    font-weight: 400;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    margin: 15px 0px;
+}
+.our-updates-section .card .card-body p{
+	margin-bottom: 0px;
+}
+.updates-item{
+	margin-bottom: 50px;
+}
+.show-more-button{
+    text-align: center;
+    margin-top: 100px;
+    color: #ed145b;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.show-more-button .show-more{
+	display: inline-block;
+    font-family: lato;
+    font-size: 15px;
+    font-weight: 400;
+}
+.show-more-button i{
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    font-size: 30px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.show-more-button:hover i{
+	top: 30px;
+	color: gray;
+}
+/***********************************************************************
+////////////////////////Our Updates start here//////////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Additional Info Two Start here//////////////////
+************************************************************************/
+.additional-info-two-section{
+	padding: 100px 0px;
+	background: url("../images/additional-info-bg.png") no-repeat;
+	background-size: cover;
+}
+.additional-info-two-section .heading h2{
+	color: white;
+}
+.additional-info-two-section .heading p{
+	color: white;
+}
+.additional-info-two-section .border-line{
+	display: block;
+	margin: 30px auto;
+}
+/***********************************************************************
+////////////////////////Additional Info Two End here////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Download Now Start here/////////////////////////
+************************************************************************/
+.download-now-section{
+	padding: 50px 0px;
+	background-color: #f4f4f4;
+}
+.download-now-section .right-content{
+	margin-left: 30px;
+}
+.download-now-section .right-content .btn-custom{
+	padding: 10px 25px;
+}
+.download-now-section .right-content .btn-custom:hover{
+	color: #ed145b;
+}
+/***********************************************************************
+////////////////////////Download Now End here/////////////////////////
+************************************************************************/
+
+
+
+/***********************************************************************
+////////////////////////Footer Start here///////////////////////////////
+************************************************************************/
+footer{
+	padding: 20px 0px;
+	background-color: #2b2b2b;
+}
+footer p{
+	font-family: lato;
+	font-weight: 400;
+	font-size: 15px;
+	color: white;
+	margin: 0px;
+	text-align: center;
+}
+footer .design-by{
+	font-size: 16px;
+	text-align: right;
+}
+footer .design-by span{
+	font-weight: 700;
+	margin-left: 8px;
+}
+footer .design-by .dot{
+	background-color: #d42a44;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0px;
+}
+/***********************************************************************
+////////////////////////Footer End here///////////////////////////////
+************************************************************************/
+.scrollToTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #000;
+    color: #ed145b;
+    font-size: 17px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    -webkit-box-shadow: 0px 23px 42px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 23px 42px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.scrollToTop:hover {
+    background: #ed145b;
+    color: #fff;
+}
